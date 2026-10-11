@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Ocean 💙</title>
+  <meta name="description" content="A little birthday surprise made with love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="#home" class="logo">OCEAN <span>♡</span></a>
+    <button id="musicBtn" class="music-btn" aria-pressed="false">
+      ♫ Play our song
+    </button>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">A LITTLE WORLD MADE JUST FOR YOU</p>
+      <div class="moon">☾</div>
+      <p class="small-label">Happy Birthday, my</p>
+      <h1>My Ocean<span class="blue-dot">.</span></h1>
+      <p class="hero-text">
+        If the whole world were an ocean,<br>
+        I'd still find my way back to you. 🌊
+      </p>
+      <a href="#letter" class="primary-btn">Open your little surprise ↓</a>
+      <div class="wave-line">〰 〰 〰 〰 〰 〰 〰</div>
+      <p class="scroll-note">SCROLL A LITTLE, BIRTHDAY BOY</p>
+    </section>
+
+    <section id="letter" class="section">
+      <p class="eyebrow">01 · A LETTER FROM YOUR GIRL</p>
+      <h2>A little piece of <em>my heart.</em></h2>
+      <p class="muted">There's something I want you to read...</p>
+
+      <button id="envelope" class="envelope" aria-expanded="false">
+        <span class="envelope-icon">💌</span>
+        <span id="envelopeText">Tap to open your letter</span>
+        <span class="envelope-hint">made with love, just for you</span>
+      </button>
+
+      <article id="letterContent" class="letter-content hidden">
+        <p class="letter-dear">To my dearest Ocean, ♡</p>
+        <p>
+          Happy Birthday, my love! I wish I could put all the love I have
+          for you into words, but somehow words never feel like enough.
+        </p>
+        <p>
+          You are such a special part of my world. Even on ordinary days,
+          you give me little reasons to smile, and I'm so grateful that
+          our paths crossed.
+        </p>
+        <p>
+          I hope this new chapter brings you peace, happiness, beautiful
+          opportunities, and all the little things your heart wishes for.
+          Please keep being the person you are, and never forget how much
+          you matter.
+        </p>
+        <p>
+          No matter how big this world gets, I hope you always remember
+          that someone is cheering for you, believing in you, and wishing
+          the very best for you.
+        </p>
+        <p class="letter-end">
+          Happy Birthday, my Ocean. 🌊<br>
+          With all my love, always,
+        </p>
+        <p class="signature">Your wife ♡</p>
+      </article>
+    </section>
+
+    <section class="section memories">
+      <p class="eyebrow">02 · LITTLE MOMENTS</p>
+      <h2>Our tiny corner of <em>forever.</em></h2>
+      <p class="muted">Add your favourite pictures in these little frames.</p>
+
+      <div class="photo-grid">
+        <figure class="photo-card">
+          <img src="photos/photo1.jpg" alt="A favourite memory together"
+               onerror="this.style.display='none'; this.nextElementSibling.hidden=false">
+          <div class="photo-placeholder" hidden>♡<br>Our favourite memory</div>
+          <figcaption>my favourite person ♡</figcaption>
+        </figure>
+        <figure class="photo-card tilted">
+          <img src="photos/photo2.jpg" alt="Another special memory"
+               onerror="this.style.display='none'; this.nextElementSibling.hidden=false">
+          <div class="photo-placeholder" hidden>☾<br>A little moment</div>
+          <figcaption>you + me = happy</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="photos/photo3.jpg" alt="A memory to treasure"
+               onerror="this.style.display='none'; this.nextElementSibling.hidden=false">
+          <div class="photo-placeholder" hidden>🌊<br>Our little world</div>
+          <figcaption>my favourite hello</figcaption>
+        </figure>
+      </div>
+      <p class="photo-tip">Your photos stay in your own website folder.</p>
+    </section>
+
+    <section class="section quiz-section">
+      <p class="eyebrow">03 · A VERY IMPORTANT TEST</p>
+      <h2>How well do you know <em>us?</em></h2>
+      <p class="muted">Let's see if the birthday boy passes! 👀</p>
+
+      <div class="quiz-card">
+        <p id="quizCount" class="quiz-count">QUESTION 1 OF 3</p>
+        <h3 id="quizQuestion">What is your special nickname?</h3>
+        <div id="quizOptions" class="quiz-options">
+          <button class="quiz-option" data-answer="0">Sunshine ☀️</button>
+          <button class="quiz-option" data-answer="1">Ocean 🌊</button>
+          <button class="quiz-option" data-answer="2">Moonlight 🌙</button>
+        </div>
+        <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+        <button id="nextQuestion" class="primary-btn hidden">Next question →</button>
+      </div>
+    </section>
+
+    <section class="section surprise-section">
+      <p class="eyebrow">04 · SOMETHING JUST FOR YOU</p>
+      <div class="gift-icon">🎁</div>
+      <h2>One last little <em>surprise.</em></h2>
+      <p class="muted">There's a birthday wish hiding inside this gift...</p>
+      <button id="giftBtn" class="primary-btn">Open your gift ♡</button>
+      <div id="giftMessage" class="gift-message hidden">
+        <span class="big-heart">💙</span>
+        <h3>My wish for you, Ocean</h3>
+        <p>
+          May the waves of life take you to beautiful places.
+          May your dreams find their way to you, may your heart stay kind,
+          and may you always find reasons to smile.
+        </p>
+        <p>And whenever life feels like a storm, I hope you remember how
+          capable you are of getting through it. I believe in you. ♡</p>
+        <p class="signature">Forever cheering for you,<br>Your wife 🌊</p>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="final-moon">☾</div>
+      <p class="eyebrow">UNTIL THE END OF EVERY WAVE</p>
+      <h2>You're my favourite<br><em>part of this world.</em></h2>
+      <p>Happy Birthday, Ocean. I love you. 💙</p>
+      <p class="signature">— Your wife ♡</p>
+      <button id="topBtn" class="text-btn">Back to the stars ↑</button>
+    </section>
+  </main>
+
+  <audio id="ourSong" src="music.mp3" loop preload="none"></audio>
+
+  <footer>made with love & a little bit of ocean magic ♡</footer>
+</body>
+</html>
